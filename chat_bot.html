@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <div>
+        <h1>Chatbot</h1>
+        <div id="chat-history" style="height: 300px; overflow-y: scroll; border: 1px solid;"></div>
+        <input id="user-input" type="text">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        async function fetchChatResponse(message) {
+            const response = await fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({message})
+            });
+
+            return response.json();
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const chatHistory = document.getElementById('chat-history');
+            const userMessage = userInput.value.trim();
+
+            if (!userMessage) return;
+
+            chatHistory.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
+            userInput.value = '';
+
+            const chatResponse = await fetchChatResponse(userMessage);
+            chatHistory.innerHTML += `<p><strong>AI:</strong> ${chatResponse.message}</p>`;
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        document.getElementById('user-input').addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
