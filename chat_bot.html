@@ -15,7 +15,7 @@
 
     <script>
         async function fetchChatResponse(message) {
-            const response = await fetch('chatbot.eba-n9bvbydy.us-west-2.elasticbeanstalk.com/chat', {
+            const response = await fetch('http://chatbot-env.eba-7kj8gabg.us-east-2.elasticbeanstalk.com/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

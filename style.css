@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /* Font */
 
 :root {
-    --primary: #24292F; /* background */
-    --seconday: #7A7C7B; /* nav bar */
-    --tertiary: #B7C0B5; /* decorative */
-    --text: #FFFFFF;
-    --negative-text: #000000;
-    --decorative: #46433A; /* alt-text */
+    --primary: #1E1F26; /* background */
+    --seconday: #2C2F3E; /* nav bar */
+    --tertiary: #4D5A75; /* decorative */
+    --text: #F0F1F5; /* default text */
+    --negative-text: #B8BEDD; /* negative text */
+    --decorative: #6373A3; /* alt-text */
 }
 
 body,html {
@@ -222,6 +222,10 @@ body,html {
 .bio h2{
     text-align: center;
 }
+.bio h3{
+    text-align: center;
+}
+
 
 
 .individual_skill {
