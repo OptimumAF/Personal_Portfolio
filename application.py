@@ -2,15 +2,14 @@ import openai
 import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
 
-with open("api_key.txt", "r") as apiFile:
-    apiKey = apiFile.readline()
-    openai.api_key = apiKey
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
-app = Flask(__name__)
-CORS(app)
-@app.route('/chat', methods=['POST'])
+application  = Flask(__name__)
+cors = CORS(application, resources={r"/chat"})
+@application.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json['message']
     gpt_response = openai.Completion.create(
@@ -28,4 +27,4 @@ def chat():
     return jsonify({'message': ai_message})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)

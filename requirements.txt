@@ -1,66 +1,53 @@
-aiohttp==3.8.4
-aiosignal==1.3.1
-asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1670263926556/work
-async-timeout==4.0.2
-attrs==22.2.0
-awsebcli==3.20.5
-backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
-backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifacts/backports.functools_lru_cache_1618230623929/work
-botocore==1.29.81
-cement==2.8.2
-certifi==2022.12.7
-charset-normalizer==2.0.12
-click==8.1.3
-colorama==0.4.3
-comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1670575068857/work
-debugpy @ file:///D:/bld/debugpy_1674522557927/work
-decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
-executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1667317341051/work
-Flask==2.2.3
-Flask-Cors==3.0.10
-frozenlist==1.3.3
-gunicorn==20.1.0
-idna==3.4
-importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1679167925176/work
-ipykernel @ file:///D:/bld/ipykernel_1678143566265/work
-ipython @ file:///D:/bld/ipython_1677617262387/work
-itsdangerous==2.1.2
-jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1669134318875/work
-Jinja2==3.1.2
-jmespath==1.0.1
-jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1676579893731/work
-jupyter_core @ file:///D:/bld/jupyter_core_1678994460189/work
-MarkupSafe==2.1.2
-matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
-multidict==6.0.4
-nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1664684991461/work
-openai==0.27.2
-packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1673482170163/work
-parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
-pathspec==0.10.1
-pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
-platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1678652433955/work
-prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1677600924538/work
-psutil @ file:///D:/bld/psutil_1667886071590/work
-pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
-Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1672682006896/work
-pypiwin32==223
-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
-pywin32==304
-PyYAML==5.4.1
-pyzmq @ file:///D:/bld/pyzmq_1678777053265/work
-requests==2.26.0
-semantic-version==2.8.5
-six==1.14.0
-stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
-termcolor==1.1.0
-tornado @ file:///D:/bld/tornado_1666788735597/work
-tqdm==4.65.0
-traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1675110562325/work
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1678559861143/work
-urllib3==1.26.15
-wcwidth==0.1.9
-Werkzeug==2.2.3
-wincertstore==0.2
-yarl==1.8.2
-zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work
+asttokens=2.2.1
+backcall=0.2.0
+backports=1.0
+backports.functools_lru_cache=1.6.4
+bzip2=1.0.8
+ca-certificates=2022.12.7
+comm=0.1.2
+debugpy=1.6.6
+decorator=5.1.1
+executing=1.2.0
+importlib-metadata=6.1.0
+importlib_metadata=6.1.0
+ipykernel=6.21.3
+ipython=8.11.0
+jedi=0.18.2
+jupyter_client=8.0.3
+jupyter_core=5.3.0
+libffi=3.4.2
+libsodium=1.0.18
+matplotlib-inline=0.1.6
+nest-asyncio=1.5.6
+openssl=1.1.1t
+packaging=23.0
+parso=0.8.3
+pickleshare=0.7.5
+pip=22.3.1
+platformdirs=3.1.1
+prompt-toolkit=3.0.38
+prompt_toolkit=3.0.38
+psutil=5.9.4
+pure_eval=0.2.2
+pygments=2.14.0
+python=3.11.0
+python-dateutil=2.8.2
+python_abi=3.11
+pyzmq=25.0.1
+sqlite=3.41.1
+stack_data=0.6.2
+tk=8.6.12
+tornado=6.2
+traitlets=5.9.0
+typing-extensions=4.5.0
+typing_extensions=4.5.0
+tzdata=2022g
+ucrt=10.0.22621.0
+vc=14.2
+vs2015_runtime=14.34.31931
+wheel=0.37.1
+wincertstore=0.2
+xz=5.2.10
+zeromq=4.3.4
+zipp=3.15.0
+zlib=1.2.13
