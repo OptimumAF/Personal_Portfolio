@@ -1,7 +1,6 @@
 asttokens==2.2.1
 backcall==0.2.0
 backports.functools_lru_cache==1.6.4
-bzip2==1.0.8
 ca-certificates==2022.12.7
 comm==0.1.2
 debugpy==1.6.6
