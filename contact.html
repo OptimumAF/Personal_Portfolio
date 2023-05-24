@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <?php include 'navbar.php'; ?>
+  </header>
+
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      
+      <script>
+      document.getElementById("contact-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+      
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const apiKey = 'yFpsnlqg549GmhmhoN3H36xPE727TJcU6Jm3Sekx';
+        const response = await fetch("https://c72nwcuodf.execute-api.us-east-2.amazonaws.com/POST/sendemail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": apiKey,
+          },
+          body: JSON.stringify({ name, email, message }),
+        });
+      
+        if (response.ok) {
+          alert("Message sent!");
+        } else {
+          alert("Error sending message.");
+        }
+      });
+      </script>
+      
+  </section>
+</body>
+</html>
